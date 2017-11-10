@@ -16,7 +16,8 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: 'Avenir LT Std'; }
+  font-family: 'Avenir LT Std';
+  font-weight: 300; }
 
 img {
   max-width: 100%; }
@@ -109,7 +110,8 @@ h3.section-title {
   background-color: #039be5;
   height: 500px;
   position: relative; }
-  .jumbotron > .container, .jumbotron > .container > .row {
+  .jumbotron > .container,
+  .jumbotron > .container > .row {
     height: 100%; }
 
 /* Hero Content */
@@ -163,12 +165,57 @@ h3.section-title {
   position: relative;
   margin-bottom: 20px; }
 
-.product__title {
-  padding: 20px 0 15px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #039be5; }
+.product__item {
+  margin-bottom: 40px;
+  transition: all .3s ease-in-out; }
+  .product__item img {
+    position: relative; }
+  .product__item:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px; }
+  .product__item .product__title {
+    padding: 20px 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #039be5; }
+  .product__item .product__short-desc {
+    margin-bottom: 15px; }
+  .product__item .product__author {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; }
+  .product__item .product__info {
+    padding: 15px 0; }
+  .product__item .product__price {
+    font-size: 18px;
+    font-weight: bold; }
+  .product__item .product-desc {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 0 15px; }
 
+/* Product Detail */
+.product__detail {
+  padding: 70px;
+  border: none; }
+  .product__detail .product__desc {
+    margin-bottom: 30px; }
+    .product__detail .product__desc h2 {
+      margin-bottom: 30px; }
+  .product__detail .product__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #039be5;
+    margin-bottom: 20px; }
+  .product__detail .product__img > img {
+    margin-bottom: 10px;
+    border-radius: .25rem; }
+
+.product__author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+/* Button */
 .btn__buy {
   background-color: #039be5;
   color: #ffffff;
@@ -177,32 +224,10 @@ h3.section-title {
     color: #ffffff;
     background-color: #0279b3; }
 
-.product__short-desc {
-  margin-bottom: 15px; }
-
-.product__author {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px; }
-
-.product__info {
-  padding: 15px 0; }
-
-.product__price {
-  font-size: 18px;
-  font-weight: bold; }
-
-.product__item {
-  margin-bottom: 40px;
-  transition: all .3s ease-in-out; }
-  .product__item img {
-    position: relative; }
-  .product__item:hover {
-    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px; }
-
-.product-desc {
-  border: 1px solid #ccc;
-  border-top: none;
-  padding: 0 15px; }
+/* Modal */
+.modal-backdrop.show {
+  background: rgba(240, 240, 240, 0.9);
+  opacity: 1; }
 
 /* Footer */
 footer {
