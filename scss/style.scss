@@ -1,0 +1,256 @@
+/*
+    Template Name: Baruna
+    Template URI: -
+    Description: -
+    Author: BayuSlari
+    Author URI: bayuslari.com
+    Version: 1.0
+*/
+
+
+/**
+ *
+ * GENERAL
+ *
+ */
+
+html {
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Avenir LT Std';
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Colours */
+
+$blue: #039be5;
+$white: #ffffff;
+$grey: #f5f5f5;
+$darkblue: #0776ad;
+
+
+/* Section */
+
+h3.section-title {
+    margin-bottom: 60px;
+}
+
+.section__content {
+    padding: 60px 0;
+}
+
+.section--blue {
+    background-color: $blue;
+    color: $white;
+}
+
+.section--grey {
+    background-color: $grey;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+
+/**
+ *
+ * COMPONENTS
+ *
+ */
+
+
+/* Nav */
+
+.navbar-brand {
+    img {
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+.nav-item {
+    a {
+        color: $white;
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#cart-icon {
+    fill: $white;
+}
+
+
+/* Slider */
+
+.hero__slider {
+    .owl-nav {
+        margin: 0 !important;
+    }
+    .owl-prev img,
+    .owl-next img {
+        height: 20px;
+    }
+
+    .owl-prev,
+    .owl-next {
+        background: transparent !important;
+        transition: all .3s ease;
+        &:hover {
+            background: #f5f5f5 !important;
+        }
+    }
+
+    .owl-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+    .hero__img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: $blue;
+    height: 500px;
+    position: relative;
+    > .container , > .container>.row{
+    	height: 100%;
+    }
+}
+
+/* Hero Content */ 
+.hero__content {
+	color: $white;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	h1 {
+		font-weight: bold;
+    	letter-spacing: 5px;
+	}
+}
+#cart-icon {
+	height: 150px;
+}
+
+/* Search box */
+
+.search-query {
+    display: inline-block;
+    width: 300px;
+    max-width: 300px;
+    transition: all .3s ease-in-out;
+    padding: 12px 15px;
+    font-size: 14px;
+    &:focus, &:hover {
+	    max-width: 320px;
+	    width: 320px;
+	    box-shadow: rgba(0, 0, 0, 0.2) 0 15px 20px;
+    	margin-top: -5px;
+		margin-bottom: 5px;
+		border: 1px solid rgba(0,0,0,.15);
+	}
+	&:focus + .btn,
+    &:hover + .btn {
+		margin-top: -5px;
+		margin-bottom: 5px;
+		color: $blue;
+	}
+
+}
+
+.search__box {
+    .btn {
+        padding: .5rem .75rem;
+        line-height: 1;
+        border: 1px solid #0684c2;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+        color: inherit;
+        z-index: 3;
+        margin-left: -36px;
+    	z-index: 3;
+    	   transition: all .3s ease-in-out;
+    }
+}
+
+/* Products */
+
+.heading__section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product__title {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.btn__buy {
+    background-color: $blue;
+    color: $white;
+    width: 100%;
+}
+
+.product__short-desc {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.product__info {
+    padding: 15px 0;
+}
+
+.product__price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: $blue;
+    color: $white;
+    a {
+        color: $white;
+    }
+}
+
+.footer__bottom {
+    padding: 10px 0;
+    background-color: $blue;
+}
